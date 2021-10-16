@@ -1,10 +1,10 @@
 //import logo from './logo.svg';
 import './App.css';
 import React,{useRef} from 'react'
-import * as tf from '@tensorflow/tfjs';
+// import * as tf from '@tensorflow/tfjs';
 import * as handpose from '@tensorflow-models/handpose';
 import Webcam from 'react-webcam';
-import { webcam } from '@tensorflow/tfjs-data';
+// import { webcam } from '@tensorflow/tfjs-data';
 import { drawhand } from './utilities';
 import photo1 from './tf-icon.png'
 import photo2 from './react.png'
@@ -88,10 +88,10 @@ function App() {
       }}>
          <p style={{
            textAlign:'center',
-         }}>Made with <img src={photo1} style={{
+         }}>Made with <img src={photo1} alt='img1' style={{
            width:'24px',
            height:'24px',
-         }} /> and <img src={photo2} style={{
+         }} /> and <img src={photo2} alt='img2' style={{
           width:'24px',
           height:'24px',
         }} />
