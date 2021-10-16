@@ -1,3 +1,3 @@
 # Handpose Detection React
 
-https://handdetection.herokuapp.com/
+https://hpdetect.herokuapp.com/
