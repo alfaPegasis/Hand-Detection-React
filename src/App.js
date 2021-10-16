@@ -6,6 +6,8 @@ import * as handpose from '@tensorflow-models/handpose';
 import Webcam from 'react-webcam';
 import { webcam } from '@tensorflow/tfjs-data';
 import { drawhand } from './utilities';
+import photo1 from './tf-icon.png'
+import photo2 from './react.png'
 
 function App() {
   const webcamRef= useRef(null);
@@ -62,6 +64,7 @@ function App() {
            zindex:9,
            width:640,
            height:480,
+           borderRadius: '16px',
 
          }} />
          <canvas ref={canvasRef}
@@ -78,6 +81,24 @@ function App() {
 
          }} />
       </header>
+      <footer style ={{
+        background:'#282c34',
+        color:'white',
+        
+      }}>
+         <p style={{
+           textAlign:'center',
+         }}>Made with <img src={photo1} style={{
+           width:'24px',
+           height:'24px',
+         }} /> and <img src={photo2} style={{
+          width:'24px',
+          height:'24px',
+        }} />
+         </p>
+         <p>By Anmol Bajpai</p>
+
+      </footer>
     </div>
   );
 }
